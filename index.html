@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BASIC -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Monisha | Web Developer Portfolio</title>
-  <meta name="description" content="Monisha – Web Developer building clean, responsive websites using HTML, CSS, JavaScript & React." />
-  <meta name="author" content="Monisha" />
+  <!-- TITLE -->
+  <title>Monisha | Frontend Web Developer Portfolio</title>
 
-  <!-- Icons -->
+  <!-- SEO META -->
+  <meta name="description" content="Monisha is a Frontend Web Developer creating clean, responsive websites using HTML, CSS, JavaScript, React and Bootstrap." />
+  <meta name="keywords" content="Monisha Web Developer, Frontend Developer, HTML CSS JavaScript Portfolio, React Developer India" />
+  <meta name="author" content="Monisha" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://YOUR-NETLIFY-URL.netlify.app/" />
+
+  <!-- THEME -->
+  <meta name="theme-color" content="#4f46e5" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Monisha | Frontend Web Developer" />
+  <meta property="og:description" content="Professional portfolio showcasing real-world frontend projects and skills." />
+  <meta property="og:image" content="images/bg.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-NETLIFY-URL.netlify.app/" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Monisha | Frontend Web Developer" />
+  <meta name="twitter:description" content="Modern frontend web developer portfolio with live projects." />
+  <meta name="twitter:image" content="images/bg.jpg" />
+
+  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <h1>Monisha</h1>
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -28,23 +51,23 @@
   </nav>
 </header>
 
+<main>
+
 <!-- HERO -->
 <section class="hero" id="home" style="background-image:url('images/bg.jpg')">
   <div class="overlay"></div>
 
   <div class="hero-content">
-    <h1>Hi, I’m <span>Monisha</span></h1>
-    <h2>Frontend Web Developer</h2>
+    <h1>Frontend Web Developer</h1>
+    <h2>Hi, I’m <span>Monisha</span></h2>
 
     <p>
-      I build clean, responsive, and modern websites
-      that help businesses grow online.
+      I build fast, accessible, and responsive websites using
+      HTML, CSS, JavaScript, React, and Bootstrap.
     </p>
 
     <div class="buttons">
-      <a href="resume.pdf" class="btn primary" download>
-        <i class="fa-solid fa-file-arrow-down"></i> Resume
-      </a>
+      <a href="resume.pdf" class="btn primary" download>Download Resume</a>
       <a href="#projects" class="btn outline">View Projects</a>
     </div>
   </div>
@@ -52,70 +75,90 @@
 
 <!-- SKILLS -->
 <section class="skills" id="skills">
-  <h2>Skills</h2>
+  <h2>Technical Skills</h2>
   <div class="skill-icons">
-    <i class="fab fa-html5"></i>
-    <i class="fab fa-css3-alt"></i>
-    <i class="fab fa-js"></i>
-    <i class="fab fa-react"></i>
-    <i class="fab fa-bootstrap"></i>
-    <i class="fab fa-github"></i>
+    <i class="fab fa-html5" aria-label="HTML5"></i>
+    <i class="fab fa-css3-alt" aria-label="CSS3"></i>
+    <i class="fab fa-js" aria-label="JavaScript"></i>
+    <i class="fab fa-react" aria-label="React"></i>
+    <i class="fab fa-bootstrap" aria-label="Bootstrap"></i>
+    <i class="fab fa-github" aria-label="GitHub"></i>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section class="projects" id="projects">
-  <h2>Projects</h2>
+  <h2>Web Development Projects</h2>
 
   <div class="project-grid">
 
-    <div class="project-card">
-      <img src="images/project1.jpg" alt="Monisha Tech Design">
+    <!-- Project 1 -->
+    <article class="project-card">
+      <img src="images/project1.jpg" alt="Monisha Tech Design business website" loading="lazy">
       <div class="project-content">
         <h3>Monisha Tech Design</h3>
-        <p>Agency website for web design & digital services.</p>
-        <a href="https://monisha-tech-design.netlify.app" target="_blank">Live</a>
+        <p>Business website offering web design, branding & digital services.</p>
+        <div class="project-links">
+          <a href="https://monisha-tech-design.netlify.app" target="_blank">Live</a>
+          <a href="https://github.com/Monisha1509/monisha-tech-design" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <div class="project-card">
-      <img src="images/project2.jpg" alt="PK Ventures">
+    <!-- Project 2 -->
+    <article class="project-card">
+      <img src="images/project2.jpg" alt="PK Ventures corporate website" loading="lazy">
       <div class="project-content">
         <h3>PK Ventures</h3>
-        <p>Corporate business website built using Bootstrap.</p>
-        <a href="https://pk-ventures-website.netlify.app" target="_blank">Live</a>
+        <p>Corporate business website built using HTML, CSS & Bootstrap.</p>
+        <div class="project-links">
+          <a href="https://pk-ventures-website.netlify.app" target="_blank">Live</a>
+          <a href="https://github.com/Monisha1509/pk-ventures-website" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <div class="project-card">
-      <img src="images/project3.jpg" alt="Sweet Crumbs Bakery">
+    <!-- Project 3 -->
+    <article class="project-card">
+      <img src="images/project3.jpg" alt="Sweet Crumbs Bakery website" loading="lazy">
       <div class="project-content">
         <h3>Sweet Crumbs Bakery</h3>
-        <p>Bakery website with menu & gallery.</p>
-        <a href="https://sweet-crumbs-bakery-web.netlify.app" target="_blank">Live</a>
+        <p>Bakery website featuring menu, gallery, and contact section.</p>
+        <div class="project-links">
+          <a href="https://sweet-crumbs-bakery-web.netlify.app" target="_blank">Live</a>
+          <a href="https://github.com/Monisha1509/sweet-crumbs-bakery" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Me</h2>
   <p>Email: <a href="mailto:monishabalsum@gmail.com">monishabalsum@gmail.com</a></p>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-socials">
-    <a href="https://github.com/Monisha1509/portfolio" target="_blank">
+    <a href="https://github.com/Monisha1509/portfolio" target="_blank" aria-label="GitHub profile">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://www.linkedin.com/in/monisha-balasubramani-7a652123a/" target="_blank">
+    <a href="https://www.linkedin.com/in/monisha-balasubramani-7a652123a/" target="_blank" aria-label="LinkedIn profile">
       <i class="fab fa-linkedin"></i>
     </a>
   </div>
-  <p>© 2026 Monisha • Web Developer</p>
+  <p>© 2026 Monisha • Frontend Web Developer</p>
 </footer>
 
 </body>
